@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="header.title">永吉水產</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="fixed w-full top-0 bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <!-- 左側：Logo 與導覽連結 -->
+          <div class="flex items-center">
+            <a href="#" class="text-xl font-bold">
+              <img class="w-[80px]" src="./assets/logo.webp" alt="SXM" />
+            </a>
+            <!-- PC Header -->
+            <nav class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a
+                href="#section1"
+                data-i18n="header.section1"
+                class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Section 1</a
+              >
+              <a
+                href="#section2"
+                data-i18n="header.section2"
+                class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Section 2</a
+              >
+              <a
+                href="#section3"
+                data-i18n="header.section3"
+                class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >Section 3</a
+              >
+            </nav>
+          </div>
+          <!-- 右側：多語系下拉選單 & 行動版選單按鈕 -->
+          <div class="flex items-center">
+            <!-- 桌機版多語系下拉選單 -->
+            <div class="hidden sm:block">
+              <select
+                onchange="setLanguage(this.value)"
+                class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              >
+                <option value="tw">繁體中文</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+            <!-- 行動版選單按鈕 -->
+            <div class="-mr-2 flex items-center sm:hidden">
+              <button
+                type="button"
+                onclick="toggleMobileMenu()"
+                class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 行動版導覽選單 -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <nav class="pt-2 pb-3 space-y-1">
+          <a
+            href="#section1"
+            data-i18n="header.section1"
+            class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
+            >Section 1</a
+          >
+          <a
+            href="#section2"
+            data-i18n="header.section2"
+            class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
+            >Section 2</a
+          >
+          <a
+            href="#section3"
+            data-i18n="header.section3"
+            class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
+            >Section 3</a
+          >
+          <!-- 行動版多語系下拉選單 -->
+          <div class="px-4 py-2">
+            <select
+              onchange="setLanguage(this.value); closeMobileMenu()"
+              class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+            >
+              <option value="tw">繁體中文</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="mt-8">
+      <!-- Section 1 -->
+      <section
+        id="section1"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
+      >
+        <h2 data-i18n="section1.title" class="text-2xl font-bold mb-4">
+          Section 1
+        </h2>
+        <p data-i18n="section1.content">這是 Section 1 的內容。</p>
+      </section>
+      <!-- Section 2 -->
+      <section
+        id="section2"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
+      >
+        <h2 data-i18n="section2.title" class="text-2xl font-bold mb-4">
+          Section 2
+        </h2>
+        <p data-i18n="section2.content">這是 Section 2 的內容。</p>
+      </section>
+      <!-- Section 3 -->
+      <section
+        id="section3"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
+      >
+        <h2 data-i18n="section3.title" class="text-2xl font-bold mb-4">
+          Section 3
+        </h2>
+        <p data-i18n="section3.content">這是 Section 3 的內容。</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <p data-i18n="footer.text" class="text-center text-gray-500 text-sm">
+          © 2025 Your Company. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ⬇️ Js Area ⬇️ -->
+    <!-- i18n JS -->
+    <script src="./i18n/i18n.js"></script>
+
+    <!-- End Script -->
+    <script src="./js/end.js"></script>
+  </body>
+</html>

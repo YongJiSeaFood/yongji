@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header nav a.active {
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+section {
+  scroll-margin-top: 4rem;
+  min-height: 100vh;
+}
