@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <base href="/yongji/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="header.title">永吉水產</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
   </head>
   <body class="bg-gray-100">
     <!-- Header -->
@@ -17,7 +20,7 @@
           <!-- 左側：Logo 與導覽連結 -->
           <div class="flex items-center">
             <a href="#" class="text-xl font-bold">
-              <img class="w-16" src="./assets/logo.webp" alt="SXM" />
+              <img class="w-16" src="./assets/main.png" alt="YongJi" />
             </a>
             <!-- PC Header -->
             <nav class="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -162,6 +165,8 @@
     <!-- i18n JS -->
     <script src="./i18n/i18n.js"></script>
 
+    <!-- PWA -->
+    <script src=".js/pwa.js"></script>
     <!-- End Script -->
     <script src="./js/end.js"></script>
   </body>
