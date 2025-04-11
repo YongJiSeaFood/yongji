@@ -21,6 +21,9 @@ const translations = {
     footer: {
       text: "© 2025 永吉水產。版權所有。",
     },
+    floatingBtn: {
+      lineLink: "立即訂購",
+    },
   },
   en: {
     header: {
@@ -43,6 +46,9 @@ const translations = {
     },
     footer: {
       text: "© 2025 Yong Ji Seafood. All rights reserved.",
+    },
+    floatingBtn: {
+      lineLink: "Order Now",
     },
   },
 };
