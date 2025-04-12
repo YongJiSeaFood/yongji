@@ -21,36 +21,39 @@
     <header class="fixed w-full top-0 bg-white shadow z-40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
-          <!-- 左側：Logo 與導覽連結 -->
+          <!-- Left: Logo and Navigation Links -->
           <div class="flex items-center">
             <a href="#" class="text-xl font-bold">
               <img class="w-16" src="./assets/main.png" alt="YongJi" />
             </a>
-            <!-- PC Header -->
+            <!-- PC Header Navigation -->
             <nav class="hidden sm:ml-6 sm:flex sm:space-x-8">
               <a
                 href="#section1"
                 data-i18n="header.section1"
                 class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                >Section 1</a
               >
+                Section 1
+              </a>
               <a
                 href="#section2"
                 data-i18n="header.section2"
                 class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                >Section 2</a
               >
+                Section 2
+              </a>
               <a
                 href="#section3"
                 data-i18n="header.section3"
                 class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                >Section 3</a
               >
+                Section 3
+              </a>
             </nav>
           </div>
-          <!-- 右側：多語系下拉選單 & 行動版選單按鈕 -->
+          <!-- Right: Language Dropdown & Mobile Menu Button -->
           <div class="flex items-center">
-            <!-- 桌機版多語系下拉選單 -->
+            <!-- Desktop Language Dropdown -->
             <div class="hidden sm:block">
               <select
                 onchange="setLanguage(this.value)"
@@ -60,7 +63,7 @@
                 <option value="en">English</option>
               </select>
             </div>
-            <!-- 行動版選單按鈕 -->
+            <!-- Mobile Menu Button -->
             <div class="-mr-2 flex items-center sm:hidden">
               <button
                 type="button"
@@ -87,28 +90,31 @@
         </div>
       </div>
 
-      <!-- 行動版導覽選單 -->
+      <!-- Mobile Navigation Menu -->
       <div class="sm:hidden hidden" id="mobile-menu">
         <nav class="pt-2 pb-3 space-y-1">
           <a
             href="#section1"
             data-i18n="header.section1"
             class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
-            >Section 1</a
           >
+            Section 1
+          </a>
           <a
             href="#section2"
             data-i18n="header.section2"
             class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
-            >Section 2</a
           >
+            Section 2
+          </a>
           <a
             href="#section3"
             data-i18n="header.section3"
             class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 mobile-link"
-            >Section 3</a
           >
-          <!-- 行動版多語系下拉選單 -->
+            Section 3
+          </a>
+          <!-- Mobile Language Dropdown -->
           <div class="px-4 py-2">
             <select
               onchange="setLanguage(this.value); closeMobileMenu()"
@@ -122,9 +128,9 @@
       </div>
     </header>
 
-    <!-- Content -->
+    <!-- Main Content -->
     <main class="mt-8">
-      <!-- Swiper -->
+      <!-- Swiper (Carousel) -->
       <div
         id="carousel"
         class="pt-[32px] mb-4 relative w-full h-[50vh] overflow-hidden"
@@ -179,7 +185,7 @@
           </div>
         </div>
 
-        <!-- Swiper Btn -->
+        <!-- Swiper Buttons -->
         <button
           id="prevBtn"
           class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 focus:outline-none"
@@ -235,7 +241,7 @@
       </div>
     </footer>
 
-    <!-- Line@ -->
+    <!-- Line@ Link -->
     <a
       data-i18n="floatingBtn.lineLink"
       href="https://line.me/R/ti/p/@672dyekk"
@@ -244,16 +250,16 @@
     >
     </a>
 
-    <!-- ⬇️ Js Area ⬇️ -->
+    <!-- JS Section -->
     <!-- i18n JS -->
     <script src="./i18n/i18n.js"></script>
 
-    <!-- Swiper -->
+    <!-- Swiper JS -->
     <script src="./js/swiper.js"></script>
 
-    <!-- PWA -->
+    <!-- PWA JS -->
     <script src=".js/pwa.js"></script>
-    <!-- End Script -->
+    <!-- End of Scripts -->
     <script src="./js/end.js"></script>
   </body>
 </html>

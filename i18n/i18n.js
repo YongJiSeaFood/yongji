@@ -2,21 +2,21 @@ const translations = {
   tw: {
     header: {
       title: "永吉水產",
-      section1: "第一區",
-      section2: "第二區",
-      section3: "第三區",
+      section1: "養殖方式",
+      section2: "熱銷商品",
+      section3: "社交媒體",
     },
     section1: {
-      title: "第一區 標題",
-      content: "這是第一區的內容。",
+      title: "養殖方式",
+      content: "這是養殖方式的內容。",
     },
     section2: {
-      title: "第二區 標題",
-      content: "這是第二區的內容。",
+      title: "熱銷商品",
+      content: "這是商品的內容。",
     },
     section3: {
-      title: "第三區 標題",
-      content: "這是第三區的內容。",
+      title: "社交媒體",
+      content: "這是自媒體的內容。",
     },
     footer: {
       text: "© 2025 永吉水產。版權所有。",
@@ -28,20 +28,20 @@ const translations = {
   en: {
     header: {
       title: "Yong Ji Seafood",
-      section1: "Section 1",
-      section2: "Section 2",
-      section3: "Section 3",
+      section1: "Farming Methods",
+      section2: "Products",
+      section3: "Social Media",
     },
     section1: {
-      title: "Section 1 Title",
+      title: "Farming Methods",
       content: "This is the content of Section 1.",
     },
     section2: {
-      title: "Section 2 Title",
+      title: "Products",
       content: "This is the content of Section 2.",
     },
     section3: {
-      title: "Section 3 Title",
+      title: "Social Media",
       content: "This is the content of Section 3.",
     },
     footer: {
