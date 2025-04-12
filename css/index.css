@@ -69,3 +69,24 @@ section {
   background: white;
   opacity: 0.5;
 }
+
+/* Glow */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 0px 0 rgba(72, 187, 120, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 12px 8px rgba(72, 187, 120, 0.5);
+    }
+  }
+
+  .animate-glow {
+    animation: pulse-glow 2s infinite ease-in-out;
+  }
+}
