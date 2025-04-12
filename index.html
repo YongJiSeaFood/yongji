@@ -253,7 +253,7 @@
           Section 2
         </h2>
 
-        <!-- item layout 1 -->
+        <!-- item layout 1 (Image then Text → 不需要調整，因為已經是圖片在前、文字在後) -->
         <div
           data-aos="fade-down-right"
           class="flex flex-col md:flex-row w-full mb-6"
@@ -305,58 +305,169 @@
           </div>
         </div>
 
-        <!-- item layout 2 -->
+        <!-- item layout 2 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
         <div
           data-aos="fade-down-left"
           class="flex flex-col md:flex-row w-full mb-6"
         >
           <!-- Text container -->
-          <div class="w-full md:w-1/2 flex items-center justify-center">
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
+          >
             <div class="text-center">
-              <div>虱目魚肚規格 / 💰價目表</div>
-              <ol class="space-y-2">
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">S</span>
-                  <span>170-190g $120</span>
-                </li>
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">M</span>
-                  <span>200-220g $135</span>
-                </li>
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">L</span>
-                  <span>230-250g $150</span>
-                </li>
-              </ol>
-
-              <hr class="my-2" />
-              <div>限量提供</div>
-              <ol class="space-y-2">
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">XL</span>
-                  <span>260-280g $165</span>
-                </li>
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">2XL</span>
-                  <span>290-310g $180</span>
-                </li>
-                <li class="grid grid-cols-[2em,1fr] gap-2">
-                  <span class="font-bold text-center">3XL</span>
-                  <span>320-340g $195</span>
-                </li>
-              </ol>
+              <div>魚皮</div>
+              <div>300g / $90</div>
             </div>
           </div>
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Fish Skin"
+            />
+          </div>
+        </div>
+
+        <!-- item layout 3 (Image then Text → 保持不變) -->
+        <div
+          data-aos="fade-down-right"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
           <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0">
             <img
               class="w-full h-full object-cover"
-              src="./assets/products/MilkfishBelly.webp"
-              alt="Milkfish Belly"
+              src="./assets/products/FishSkin.webp"
+              alt="Fish Skin"
+            />
+          </div>
+          <!-- Text container -->
+          <div class="w-full md:w-1/2 flex items-center justify-center">
+            <div class="text-center">
+              <div>魚柳</div>
+              <div>600g / $180</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item layout 4 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <div
+          data-aos="fade-down-left"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
+          <!-- Text container -->
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
+          >
+            <div class="text-center">
+              <div>魚腸</div>
+              <div>600g / $100</div>
+            </div>
+          </div>
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Fish Intestine"
+            />
+          </div>
+        </div>
+
+        <!-- item layout 5 (Image then Text → 保持不變) -->
+        <div
+          data-aos="fade-down-right"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Fish Skin"
+            />
+          </div>
+          <!-- Text container -->
+          <div class="w-full md:w-1/2 flex items-center justify-center">
+            <div class="text-center">
+              <div>里肌</div>
+              <div>300g / $90</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item layout 6 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <div
+          data-aos="fade-down-left"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
+          <!-- Text container -->
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
+          >
+            <div class="text-center">
+              <div>魚頭</div>
+              <div>$50 / 包</div>
+            </div>
+          </div>
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Fish Head"
+            />
+          </div>
+        </div>
+
+        <!-- item layout 7 (Image then Text → 保持不變) -->
+        <div
+          data-aos="fade-down-right"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Milkfish Sausage"
+            />
+          </div>
+          <!-- Text container -->
+          <div class="w-full md:w-1/2 flex items-center justify-center">
+            <div class="text-center">
+              <div>虱目魚香腸</div>
+              <div>600g / $250</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item layout 8 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <div
+          data-aos="fade-down-left"
+          class="flex flex-col md:flex-row w-full mb-6"
+        >
+          <!-- Text container -->
+          <div
+            class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
+          >
+            <div class="text-center">
+              <div>飛魚卵虱目魚香腸</div>
+              <div>600g / $300</div>
+            </div>
+          </div>
+          <!-- Image container with bottom margin on mobile -->
+          <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/products/FishSkin.webp"
+              alt="Flying Fish Roe Milkfish Sausage"
             />
           </div>
         </div>
       </section>
+
       <!-- Section 3 -->
       <section
         id="section3"
