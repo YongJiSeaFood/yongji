@@ -55,24 +55,31 @@ updateDots();
 // Mobile: Touch/Swipe functionality
 let touchStartX = 0;
 let touchEndX = 0;
-const swipeThreshold = 50; // Minimum swipe distance (in pixels) to trigger slide change
+const swipeThreshold = 50; // Minimum swipe distance in pixels to trigger slide change
 
+// Listen for the touchstart event and store the starting X coordinate
 carouselInner.addEventListener("touchstart", (event) => {
-  touchStartX = event.changedTouches[0].screenX;
+  touchStartX = event.touches[0].clientX;
 });
 
-carouselInner.addEventListener("touchend", (event) => {
-  touchEndX = event.changedTouches[0].screenX;
+// Listen for the touchmove event and update the current X coordinate
+carouselInner.addEventListener("touchmove", (event) => {
+  touchEndX = event.touches[0].clientX;
+});
+
+// Listen for the touchend event and handle the swipe gesture
+carouselInner.addEventListener("touchend", () => {
   handleGesture();
 });
 
 function handleGesture() {
+  // If the swipe distance exceeds the threshold, update the slide accordingly
   if (touchEndX < touchStartX - swipeThreshold) {
-    // Swipe left -> next slide
+    // Swipe left - move to the next slide
     currentIndex = (currentIndex + 1) % totalSlides;
     updateCarousel();
   } else if (touchEndX > touchStartX + swipeThreshold) {
-    // Swipe right -> previous slide
+    // Swipe right - move to the previous slide
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
   }
