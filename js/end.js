@@ -3,7 +3,8 @@ const navLinks = document.querySelectorAll("header nav a");
 
 const observerOptions = {
   root: null,
-  threshold: 0.6,
+  threshold: 0.1,
+  // rootMargin: "-80px 0px 0px 0px",
 };
 
 const observerCallback = (entries) => {

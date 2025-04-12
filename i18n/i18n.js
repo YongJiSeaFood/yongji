@@ -12,7 +12,36 @@ const translations = {
     },
     section2: {
       title: "熱銷商品",
-      content: "這是商品的內容。",
+      // item 1
+      item1Title: "虱目魚肚規格 / 💰價目表",
+      item1S: "170-190g / $120",
+      item1M: "200-220g / $135",
+      item1L: "230-250g / $150",
+      item1Sub: "限量提供",
+      item1XL: "260-280g / $165",
+      item1XXL: "290-310g / $180",
+      item1XXXL: "320-340g / $195",
+      // item 2
+      item2Title: "魚皮",
+      item2Sub: "300g / $90",
+      // item 3
+      item3Title: "魚柳",
+      item3Sub: "600g / $180",
+      //item 4
+      item4Title: "魚腸",
+      item4Sub: "600g / $100",
+      //item 5
+      item5Title: "里肌",
+      item5Sub: "300g / $90",
+      //item 6
+      item6Title: "魚頭",
+      item6Sub: "$50 / 包",
+      //item 7
+      item7Title: "虱目魚香腸",
+      item7Sub: "600g / $250",
+      //item 8
+      item8Title: "飛魚卵虱目魚香腸",
+      item8Sub: "600g / $300",
     },
     section3: {
       title: "社交媒體",
@@ -37,9 +66,39 @@ const translations = {
       content: "This is the content of Section 1.",
     },
     section2: {
-      title: "Products",
-      content: "This is the content of Section 2.",
+      title: "Best-selling Products",
+      // item 1
+      item1Title: "Milkfish Belly Specifications / 💰 Price List",
+      item1S: "170-190g / $120",
+      item1M: "200-220g / $135",
+      item1L: "230-250g / $150",
+      item1Sub: "Limited Supply",
+      item1XL: "260-280g / $165",
+      item1XXL: "290-310g / $180",
+      item1XXXL: "320-340g / $195",
+      // item 2
+      item2Title: "Fish Skin",
+      item2Sub: "300g / $90",
+      // item 3
+      item3Title: "Fish Fillets",
+      item3Sub: "600g / $180",
+      // item 4
+      item4Title: "Fish Intestine",
+      item4Sub: "600g / $100",
+      // item 5
+      item5Title: "Fish Tenderloin",
+      item5Sub: "300g / $90",
+      // item 6
+      item6Title: "Fish Head",
+      item6Sub: "$50 / per pack",
+      // item 7
+      item7Title: "Milkfish Sausage",
+      item7Sub: "600g / $250",
+      // item 8
+      item8Title: "Flying Fish Roe Milkfish Sausage",
+      item8Sub: "600g / $300",
     },
+
     section3: {
       title: "Social Media",
       content: "This is the content of Section 3.",

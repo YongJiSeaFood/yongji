@@ -33,7 +33,7 @@
               <a
                 href="#section1"
                 data-i18n="header.section1"
-                class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                class="text-gray-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
               >
                 Section 1
               </a>
@@ -249,17 +249,12 @@
         data-aos="fade-up"
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
       >
-        <h2 data-i18n="section2.title" class="text-2xl font-bold mb-4">
-          Section 2
-        </h2>
-
-        <!-- item layout 1 (Image then Text → 不需要調整，因為已經是圖片在前、文字在後) -->
+        <!-- item 1 -->
         <div
           data-aos="fade-down-right"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0">
             <img
               class="w-full h-full object-cover"
@@ -267,61 +262,58 @@
               alt="Milkfish Belly"
             />
           </div>
-          <!-- Text container -->
           <div class="w-full md:w-1/2 flex items-center justify-center">
             <div class="text-center">
-              <div>虱目魚肚規格 / 💰價目表</div>
+              <div data-i18n="section2.item1Title">虱目魚肚規格 / 價目表</div>
               <ol class="space-y-2">
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">S</span>
-                  <span>170-190g $120</span>
+                  <span data-i18n="section2.item1S"></span>
                 </li>
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">M</span>
-                  <span>200-220g $135</span>
+                  <span data-i18n="section2.item1M"></span>
                 </li>
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">L</span>
-                  <span>230-250g $150</span>
+                  <span data-i18n="section2.item1L"></span>
                 </li>
               </ol>
 
               <hr class="my-2" />
-              <div>限量提供</div>
+              <div data-i18n="section2.item1Sub">限量提供</div>
               <ol class="space-y-2">
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">XL</span>
-                  <span>260-280g $165</span>
+                  <span data-i18n="section2.item1XL"></span>
                 </li>
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">2XL</span>
-                  <span>290-310g $180</span>
+                  <span data-i18n="section2.item1XXL"></span>
                 </li>
                 <li class="grid grid-cols-[2em,1fr] gap-2">
                   <span class="font-bold text-center">3XL</span>
-                  <span>320-340g $195</span>
+                  <span data-i18n="section2.item1XXXL"></span>
                 </li>
               </ol>
             </div>
           </div>
         </div>
 
-        <!-- item layout 2 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <!-- item 2 -->
         <div
           data-aos="fade-down-left"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Text container -->
           <div
             class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
           >
             <div class="text-center">
-              <div>魚皮</div>
-              <div>300g / $90</div>
+              <div data-i18n="section2.item2Title">魚皮</div>
+              <div data-i18n="section2.item2Sub"></div>
             </div>
           </div>
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
             <img
               class="w-full h-full object-cover"
@@ -331,13 +323,12 @@
           </div>
         </div>
 
-        <!-- item layout 3 (Image then Text → 保持不變) -->
+        <!-- item 3 -->
         <div
           data-aos="fade-down-right"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0">
             <img
               class="w-full h-full object-cover"
@@ -345,31 +336,28 @@
               alt="Fish Skin"
             />
           </div>
-          <!-- Text container -->
           <div class="w-full md:w-1/2 flex items-center justify-center">
             <div class="text-center">
-              <div>魚柳</div>
-              <div>600g / $180</div>
+              <div data-i18n="section2.item3Title">魚柳</div>
+              <div data-i18n="section2.item3Sub"></div>
             </div>
           </div>
         </div>
 
-        <!-- item layout 4 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <!-- item 4 -->
         <div
           data-aos="fade-down-left"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Text container -->
           <div
             class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
           >
             <div class="text-center">
-              <div>魚腸</div>
-              <div>600g / $100</div>
+              <div data-i18n="section2.item4Title">魚腸</div>
+              <div data-i18n="section2.item4Sub"></div>
             </div>
           </div>
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
             <img
               class="w-full h-full object-cover"
@@ -379,13 +367,12 @@
           </div>
         </div>
 
-        <!-- item layout 5 (Image then Text → 保持不變) -->
+        <!-- item 5 -->
         <div
           data-aos="fade-down-right"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0">
             <img
               class="w-full h-full object-cover"
@@ -393,31 +380,28 @@
               alt="Fish Skin"
             />
           </div>
-          <!-- Text container -->
           <div class="w-full md:w-1/2 flex items-center justify-center">
             <div class="text-center">
-              <div>里肌</div>
-              <div>300g / $90</div>
+              <div data-i18n="section2.item5Title">里肌</div>
+              <div data-i18n="section2.item5Sub">300g / $90</div>
             </div>
           </div>
         </div>
 
-        <!-- item layout 6 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <!-- item 6 -->
         <div
           data-aos="fade-down-left"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Text container -->
           <div
             class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
           >
             <div class="text-center">
-              <div>魚頭</div>
-              <div>$50 / 包</div>
+              <div data-i18n="section2.item6Title">魚頭</div>
+              <div data-i18n="section2.item6Sub"></div>
             </div>
           </div>
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
             <img
               class="w-full h-full object-cover"
@@ -427,13 +411,12 @@
           </div>
         </div>
 
-        <!-- item layout 7 (Image then Text → 保持不變) -->
+        <!-- item 7 -->
         <div
           data-aos="fade-down-right"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0">
             <img
               class="w-full h-full object-cover"
@@ -441,31 +424,28 @@
               alt="Milkfish Sausage"
             />
           </div>
-          <!-- Text container -->
           <div class="w-full md:w-1/2 flex items-center justify-center">
             <div class="text-center">
-              <div>虱目魚香腸</div>
-              <div>600g / $250</div>
+              <div data-i18n="section2.item7Title">虱目魚香腸</div>
+              <div data-i18n="section2.item7Sub"></div>
             </div>
           </div>
         </div>
 
-        <!-- item layout 8 (原本 HTML：Text then Image → 調整後：手機排列為 Image 在前、文字在下) -->
+        <!-- item 8 -->
         <div
           data-aos="fade-down-left"
           data-aos-duration="1000"
           class="flex flex-col md:flex-row w-full mb-6"
         >
-          <!-- Text container -->
           <div
             class="w-full md:w-1/2 flex items-center justify-center order-last md:order-none"
           >
             <div class="text-center">
-              <div>飛魚卵虱目魚香腸</div>
-              <div>600g / $300</div>
+              <div data-i18n="section2.item8Title">飛魚卵虱目魚香腸</div>
+              <div data-i18n="section2.item8Sub"></div>
             </div>
           </div>
-          <!-- Image container with bottom margin on mobile -->
           <div class="w-full md:w-1/2 mb-4 md:mb-0 order-first md:order-none">
             <img
               class="w-full h-full object-cover"
