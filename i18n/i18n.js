@@ -45,7 +45,7 @@ const translations = {
     },
     section3: {
       title: "社交媒體",
-      content: "這是自媒體的內容。",
+      content: "點擊或掃碼加入",
     },
     footer: {
       text: "© 2025 永吉水產。版權所有。",
@@ -101,7 +101,7 @@ const translations = {
 
     section3: {
       title: "Social Media",
-      content: "This is the content of Section 3.",
+      content: "Click or Scan",
     },
     footer: {
       text: "© 2025 Yong Ji Seafood. All rights reserved.",
