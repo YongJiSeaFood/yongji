@@ -30,3 +30,14 @@ section {
   scroll-margin-top: 4rem;
   min-height: 100vh;
 }
+
+/* swiper */
+.active-dot {
+  background: var(--primary-color);
+  border: 1px solid white;
+}
+
+.inactive-dot {
+  background: white;
+  opacity: 0.5;
+}

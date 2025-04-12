@@ -185,19 +185,45 @@
           </div>
         </div>
 
-        <!-- Swiper Buttons -->
+        <!-- PC: Arrow Buttons (visible on medium screens and up) -->
         <button
           id="prevBtn"
-          class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 focus:outline-none"
+          class="hidden sm:block absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 focus:outline-none"
         >
           ◀
         </button>
         <button
           id="nextBtn"
-          class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 focus:outline-none"
+          class="hidden sm:block absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white px-4 py-2 focus:outline-none"
         >
           ▶
         </button>
+
+        <!-- Mobile: Dot Indicators (visible on small screens only) -->
+        <div
+          class="sm:hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        >
+          <button
+            class="w-3 h-3 rounded-full focus:outline-none"
+            data-slide="0"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full focus:outline-none"
+            data-slide="1"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full focus:outline-none"
+            data-slide="2"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full focus:outline-none"
+            data-slide="3"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full focus:outline-none"
+            data-slide="4"
+          ></button>
+        </div>
       </div>
 
       <!-- Section 1 -->

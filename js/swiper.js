@@ -1,57 +1,79 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let currentIndex = 0;
-  const carouselInner = document.getElementById("carousel-inner");
-  const slides = carouselInner.children;
+// Get carousel elements
+const carouselInner = document.getElementById("carousel-inner");
+const slides = carouselInner.children;
+const totalSlides = slides.length;
+let currentIndex = 0;
 
-  function updateCarousel() {
-    const width = slides[0].clientWidth;
-    carouselInner.style.transform = `translateX(-${currentIndex * width}px)`;
-  }
+// PC arrow buttons
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  }
+// Mobile dot indicators
+const dotButtons = document.querySelectorAll("[data-slide]");
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-  }
+// Function to update carousel slide
+function updateCarousel() {
+  carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+  updateDots();
+}
 
-  // 綁定按鈕事件
-  document.getElementById("prevBtn").addEventListener("click", prevSlide);
-  document.getElementById("nextBtn").addEventListener("click", nextSlide);
-
-  // 觸控事件
-  let startX = 0;
-  let isSwiping = false;
-  const carousel = document.getElementById("carousel");
-
-  carousel.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-    isSwiping = true;
-  });
-
-  carousel.addEventListener("touchmove", (e) => {
-    // 如有需要，可加入 e.preventDefault(); 以防止預設行為
-  });
-
-  carousel.addEventListener("touchend", (e) => {
-    if (!isSwiping) return;
-    const endX = e.changedTouches[0].clientX;
-    const diffX = endX - startX;
-    if (diffX > 50) {
-      prevSlide();
-    } else if (diffX < -50) {
-      nextSlide();
+// Function to update dot active styling
+function updateDots() {
+  dotButtons.forEach((dot, index) => {
+    if (index === currentIndex) {
+      dot.classList.remove("inactive-dot");
+      dot.classList.add("active-dot");
+    } else {
+      dot.classList.remove("active-dot");
+      dot.classList.add("inactive-dot");
     }
-    isSwiping = false;
   });
+}
 
-  // 自動輪播（每5秒切換下一張）
-  setInterval(nextSlide, 5000);
-  window.addEventListener("resize", updateCarousel);
-
-  // 初始更新輪播位置
+// Click event listeners for arrow buttons (PC)
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
   updateCarousel();
 });
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateCarousel();
+});
+
+// Click event listeners for dot buttons (Mobile)
+dotButtons.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    currentIndex = parseInt(dot.getAttribute("data-slide"));
+    updateCarousel();
+  });
+});
+
+// Initialize dot styling
+updateDots();
+
+// Mobile: Touch/Swipe functionality
+let touchStartX = 0;
+let touchEndX = 0;
+const swipeThreshold = 50; // Minimum swipe distance (in pixels) to trigger slide change
+
+carouselInner.addEventListener("touchstart", (event) => {
+  touchStartX = event.changedTouches[0].screenX;
+});
+
+carouselInner.addEventListener("touchend", (event) => {
+  touchEndX = event.changedTouches[0].screenX;
+  handleGesture();
+});
+
+function handleGesture() {
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swipe left -> next slide
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateCarousel();
+  } else if (touchEndX > touchStartX + swipeThreshold) {
+    // Swipe right -> previous slide
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+}
