@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/index.css" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- PWA -->
     <link rel="manifest" href="./manifest.json" />
   </head>
@@ -233,6 +235,7 @@
       <!-- Section 1 -->
       <section
         id="section1"
+        data-aos="fade-up"
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
       >
         <h2 data-i18n="section1.title" class="text-2xl font-bold mb-4">
@@ -243,6 +246,7 @@
       <!-- Section 2 -->
       <section
         id="section2"
+        data-aos="fade-up"
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
       >
         <h2 data-i18n="section2.title" class="text-2xl font-bold mb-4">
@@ -253,6 +257,7 @@
       <!-- Section 3 -->
       <section
         id="section3"
+        data-aos="fade-up"
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white shadow mb-8"
       >
         <h2 data-i18n="section3.title" class="text-2xl font-bold mb-4">
@@ -287,8 +292,15 @@
     <!-- Swiper JS -->
     <script src="./js/swiper.js"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <!-- PWA JS -->
     <script src=".js/pwa.js"></script>
+
     <!-- End of Scripts -->
     <script src="./js/end.js"></script>
   </body>
